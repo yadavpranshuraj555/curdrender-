@@ -9,7 +9,7 @@ gem "rails", "~> 7.1.4", ">= 7.1.4.1"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 1.4"
+# gem "sqlite3", ">= 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -85,4 +85,15 @@ gem 'jwt'
 # gem 'devise', '~> 4.x'
 # Gemfile
 # gem 'activeadmin', '~> 3.2.5'
-gem 'devise', '~> 4.8'  # Specify a compatible Devise version
+gem 'devise', '~> 4.8' 
+ # Specify a compatible Devise version
+group :development, :test do
+  gem 'sqlite3'
+end
+
+# group :production do
+#   gem 'pg'
+# end
+# Gemfile
+gem 'pg', '~> 1.5'
+# or the latest compatible version
