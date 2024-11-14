@@ -10,3 +10,9 @@
 #     end
 #   end
 # end
+# # Deleted Gemfile.lock
+# bundle install
+# git add .
+# git commit -m "Modified Gemfile.lock"
+# git push origin master
+# git push heroku master
