@@ -95,5 +95,7 @@ end
 #   gem 'pg'
 # end
 # Gemfile
-gem 'pg', '~> 1.5'
+# gem 'pg', '~> 1.5'
+gem 'pg', '~> 1.2' # Example version constraint
+
 # or the latest compatible version

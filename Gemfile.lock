@@ -275,7 +275,7 @@ DEPENDENCIES
   jbuilder
   jwt
   letter_opener
-  pg (~> 1.5)
+  pg (~> 1.2)
   puma (>= 5.0)
   rails (~> 7.1.4, >= 7.1.4.1)
   selenium-webdriver
