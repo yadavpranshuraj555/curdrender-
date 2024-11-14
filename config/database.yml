@@ -1,4 +1,3 @@
-# config/database.yml
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -16,22 +15,45 @@ test:
   username: postgres
   password: postgres
 
-
-  production:
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+production:
+  <<: *default
   url: postgresql://pranshuraj_yadav_user:FB86vqyz66BPCSedOBwXQ2FLIHEwRXXv@dpg-csphvl2j1k6c73atiof0-a.oregon-postgres.render.com/pranshuraj_yadav
 
+ 
+  # # config/database.yml
+  # default: &default
+  #   adapter: postgresql
+  #   encoding: unicode
+  #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-# production:
-#   <<: *default
-#   database: your_app_name_production
-#   url:  postgresql://pranshuraj_yadav_user:FB86vqyz66BPCSedOBwXQ2FLIHEwRXXv@dpg-csphvl2j1k6c73atiof0-a.oregon-postgres.render.com/pranshuraj_yadav
-#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # development:
+  #   <<: *default
+  #   database: your_app_name_development
+  #   username: postgres
+  #   password: postgres 
+
+  # test:
+  #   <<: *default
+  #   database: your_app_name_test
+  #   username: postgres
+  #   password: postgres
 
 
-# production:
-#  <<: *default
-#   url: <%= ENV['DATABASE_URL'] %>
-#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  #   production:
+  #   adapter: postgresql
+  #   encoding: unicode
+  #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  #   url: postgresql://pranshuraj_yadav_user:FB86vqyz66BPCSedOBwXQ2FLIHEwRXXv@dpg-csphvl2j1k6c73atiof0-a.oregon-postgres.render.com/pranshuraj_yadav
+
+
+  # # production:
+  # #   <<: *default
+  # #   database: your_app_name_production
+  # #   url:  postgresql://pranshuraj_yadav_user:FB86vqyz66BPCSedOBwXQ2FLIHEwRXXv@dpg-csphvl2j1k6c73atiof0-a.oregon-postgres.render.com/pranshuraj_yadav
+  # #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+  # # production:
+  # #  <<: *default
+  # #   url: <%= ENV['DATABASE_URL'] %>
+  # #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
